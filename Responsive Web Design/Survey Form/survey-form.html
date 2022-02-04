@@ -1,133 +1,140 @@
-<head>
-  <title>D&D Campaign Survey Form</title>
-  <meta charset="utf-8" />
-
-  <meta name="#" content="#" />
-</head>
-<body>
-  <h1 class="title" id="title">D&D Campaign Survey Form</h1>
-  <p id="description">Suggestions for the next campaign</p>
-  <form id="survey-form">
-    <div class="form-group">
-      <label id="name-label" for="name">Name</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Enter your name"
-        autofocus
-        required
-      />
-    </div>
-    <div class="form-group">
-      <label id="email-label" for="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Enter your email"
-        required
-      />
-    </div>
-    <div class="form-group">
-      <label id="number-label" for="number">Age (optional)</label>
-      <input
-        type="number"
-        name="age"
-        id="number"
-        placeholder="Age"
-        min="10"
-        max="122"
-      />
-    </div>
-    <div class="form-group">
-      <p>Primary Class:</p>
-      <select id="dropdown" name="dropdown">
-        <option disabled selected value>Select an option</option>
-        <option value="artificer">Artificer</option>
-        <option value="barbarian">Barbarian</option>
-        <option value="bard">Bard</option>
-        <option value="cleric">Cleric</option>
-        <option value="druid">Druid</option>
-        <option value="fighter">Fighter</option>
-        <option value="monk">Monk</option>
-        <option value="paladin">Paladin</option>
-        <option value="ranger">Ranger</option>
-        <option value="rogue">Rogue</option>
-        <option value="sorcerer">Sorcerer</option>
-        <option value="warlock">Warlock</option>
-        <option value="wizard">Wizard</option>
-        <option value="other/na">Other/NA</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <p>Secondary Class:</p>
-      <select id="dropdown" name="dropdown">
-        <option disabled selected value>Select an option</option>
-        <option value="artificer">Artificer</option>
-        <option value="barbarian">Barbarian</option>
-        <option value="bard">Bard</option>
-        <option value="cleric">Cleric</option>
-        <option value="druid">Druid</option>
-        <option value="fighter">Fighter</option>
-        <option value="monk">Monk</option>
-        <option value="paladin">Paladin</option>
-        <option value="ranger">Ranger</option>
-        <option value="rogue">Rogue</option>
-        <option value="sorcerer">Sorcerer</option>
-        <option value="warlock">Warlock</option>
-        <option value="wizard">Wizard</option>
-        <option value="other/na">Other/NA</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <p>Choose your primary Pillar of Adventure:</p>
-      <label for="Socialization">Socialization</label>
-      <input
-        type="radio"
-        id="socialization"
-        name="pillar-of-adventure"
-        value="socialization"
-      />
-      <label for="Exploration">Exploration</label>
-      <input
-        type="radio"
-        id="exploration"
-        name="pillar-of-adventure"
-        value="Exploration"
-      />
-      <label for="Combat">Combat</label>
-      <input
-        type="radio"
-        id="combat"
-        name="pillar-of-adventure"
-        value="Combat"
-      />
-    </div>
-    <div class="form-group">
-      <p>#</p>
-      <label for="#"></label>
-      <input type="checkbox" id="#" name="#" value="#" />
-      <label for="#"></label>
-      <input type="checkbox" id="#" name="#" value="#" />
-      <label for="#"></label>
-      <input type="checkbox" id="#" name="#" value="#" />
-      <label for="#"></label>
-      <input type="checkbox" id="#" name="#" value="#" />
-    </div>
-    <div class="form-group">
-      <p>Any ideas or Suggestions?</p>
-      <textarea
-        rows="5"
-        column="70"
-        name="suggestions"
-        id="suggestions"
-        placeholder="Enter any other ideas here..."
-      >
-      </textarea>
-    </div>
-    <div class="form-group">
-      <button type="submit" id="submit" class="submit-button">Submit</button>
-    </div>
-  </form>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>D&D Campaign Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="#" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="title" id="title">D&D Campaign Survey Form</h1>
+      <p id="description">Suggestions for the next campaign</p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            autofocus
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age (optional)</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            placeholder="Age"
+            min="10"
+            max="122"
+          />
+        </div>
+        <div class="form-group">
+          <p>Primary Class:</p>
+          <select id="dropdown" name="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="artificer">Artificer</option>
+            <option value="barbarian">Barbarian</option>
+            <option value="bard">Bard</option>
+            <option value="cleric">Cleric</option>
+            <option value="druid">Druid</option>
+            <option value="fighter">Fighter</option>
+            <option value="monk">Monk</option>
+            <option value="paladin">Paladin</option>
+            <option value="ranger">Ranger</option>
+            <option value="rogue">Rogue</option>
+            <option value="sorcerer">Sorcerer</option>
+            <option value="warlock">Warlock</option>
+            <option value="wizard">Wizard</option>
+            <option value="other/na">Other/NA</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Secondary Class:</p>
+          <select id="dropdown" name="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="artificer">Artificer</option>
+            <option value="barbarian">Barbarian</option>
+            <option value="bard">Bard</option>
+            <option value="cleric">Cleric</option>
+            <option value="druid">Druid</option>
+            <option value="fighter">Fighter</option>
+            <option value="monk">Monk</option>
+            <option value="paladin">Paladin</option>
+            <option value="ranger">Ranger</option>
+            <option value="rogue">Rogue</option>
+            <option value="sorcerer">Sorcerer</option>
+            <option value="warlock">Warlock</option>
+            <option value="wizard">Wizard</option>
+            <option value="other/na">Other/NA</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Choose your primary Pillar of Adventure:</p>
+          <label for="Socialization">Socialization</label>
+          <input
+            type="radio"
+            id="socialization"
+            name="pillar-of-adventure"
+            value="socialization"
+          />
+          <label for="Exploration">Exploration</label>
+          <input
+            type="radio"
+            id="exploration"
+            name="pillar-of-adventure"
+            value="Exploration"
+          />
+          <label for="Combat">Combat</label>
+          <input
+            type="radio"
+            id="combat"
+            name="pillar-of-adventure"
+            value="Combat"
+          />
+        </div>
+        <div class="form-group">
+          <p>#</p>
+          <label for="#"></label>
+          <input type="checkbox" id="#" name="#" value="#" />
+          <label for="#"></label>
+          <input type="checkbox" id="#" name="#" value="#" />
+          <label for="#"></label>
+          <input type="checkbox" id="#" name="#" value="#" />
+          <label for="#"></label>
+          <input type="checkbox" id="#" name="#" value="#" />
+        </div>
+        <div class="form-group">
+          <p>Any ideas or Suggestions?</p>
+          <textarea
+            rows="5"
+            column="70"
+            name="suggestions"
+            id="suggestions"
+            placeholder="Enter any other ideas here..."
+          >
+          </textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
