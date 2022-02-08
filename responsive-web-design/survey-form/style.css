@@ -1,18 +1,22 @@
 :root {
   --celadon-green: #218380;
   --bright-yellow-crayola: #fbb13c;
-  --imperial-red: #ed1b2e;
-  --imperial-red-alpha: rgba(237, 27, 46, 0.6);
+  --form-group: #ed1b2e;
+  --form-group-alpha: rgba(237, 27, 46, 0.6);
   --falu-red: #7f181b;
   --black: #000000;
 }
 html {
   font-size: 62.5%;
+  font-family: helvetica, arial, sans-serif;
 }
 body {
   background-image: url(https://www.wargamer.com/wp-content/uploads/2021/07/DnD-Fizbans-Treasury-of-Dragons-greater-dragons.jpg);
-  font-family: helvetica, arial, sans-serif;
-  font-size: 14px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 5vw 1em;
   font-size: 1.4rem;
   text-align: center;
 }
@@ -24,5 +28,5 @@ p {
   font-size: 2.4rem;
 }
 .form-group {
-  background: var(--imperial-red-alpha);
+  background: var(--form-group-alpha);
 }
