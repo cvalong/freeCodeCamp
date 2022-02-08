@@ -1,5 +1,8 @@
 :root {
   --nav-color: gray;
+  --text-color: #555;
+  --text-color-emphasis: #333;
+  --link-color: #e81c4f;
 }
 * {
   box-sizing: border-box;
@@ -9,7 +12,12 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
+  color: var(--text-color);
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 4em 1em;
 }
 nav {
   position: fixed;
@@ -20,10 +28,18 @@ nav {
   background: var(--nav-color);
   z-index: 2;
 }
+h1,
+h2,
+strong {
+  color: var(--text-color-emphasis);
+}
+a {
+  color: var(--link-color);
+}
 
 @media (min-width: 600px) {
   body {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 }
