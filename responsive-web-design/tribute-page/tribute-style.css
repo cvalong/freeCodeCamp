@@ -27,3 +27,14 @@ strong {
 a {
   color: var(--link-color);
 }
+h1 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
