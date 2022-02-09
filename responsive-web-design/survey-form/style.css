@@ -1,10 +1,7 @@
 :root {
-  --celadon-green: #218380;
-  --bright-yellow-crayola: #fbb13c;
-  --form-group: #ed1b2e;
-  --form-group-alpha: rgba(237, 27, 46, 0.6);
-  --falu-red: #7f181b;
-  --black: #000000;
+  --text-color: #eeeeee;
+  --form-group: #470000;
+  --form-group-alpha: rgba(71, 0, 40, 0.6);
 }
 html {
   font-size: 62.5%;
@@ -17,16 +14,17 @@ body {
   background-size: cover;
   line-height: 1.2;
   padding: 5vw 1em;
-  font-size: 1.4rem;
   text-align: center;
 }
 p {
   display: inline;
 }
 .title {
-  font-size: 24px;
   font-size: 2.4rem;
 }
 .form-group {
   background: var(--form-group-alpha);
+  padding: 0.5vw;
+  color: var(--text-color);
+  font-size: 1.8rem;
 }
