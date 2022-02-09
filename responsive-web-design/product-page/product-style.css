@@ -1,19 +1,19 @@
 :root {
-  --nav-color: gray;
+  --nav-color-alpha: rgba(0, 0, 0, 0.5);
   --text-color: #555;
   --text-color-emphasis: #333;
-  --link-color: #e81c4f;
+  --primary-color: #e81c4f;
   --media-background-color: #CCC;
 }
 * {
   box-sizing: border-box;
 }
 html {
-  font-family: helvetica, sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   font-size: 62.5%;
 }
 body {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   color: var(--text-color);
   margin: 0 auto;
   max-width: 50em;
@@ -26,7 +26,7 @@ strong {
   color: var(--text-color-emphasis);
 }
 a {
-  color: var(--link-color);
+  color: var(--primary-color);
 }
 nav {
   position: fixed;
@@ -34,8 +34,30 @@ nav {
   left: 0px;
   padding: 20px;
   width: 100%;
-  background: var(--nav-color);
+  height: 80px;
+  background: var(--nav-color-alpha);
   z-index: 2;
+}
+.nav-cluster {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.small-container {
+  max-width: 800px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.responsive-image {
+  max-width: 100%;
+  height: auto;
 }
 /*resizable video section*/
 html,
