@@ -90,7 +90,10 @@ img.responsive-image {
   max-width: 100%;
   height: auto;
 }
-/*resizable video section*/
+/*resizable video section
+currently has an issue with wide and short views
+*/
+
 html,
 body {
   height: 100%;
