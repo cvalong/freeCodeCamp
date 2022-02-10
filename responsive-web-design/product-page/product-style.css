@@ -46,6 +46,11 @@ footer {
   height: 80px;
   background: var(--nav-color-alpha);
 }
+form {
+  display: flex;
+  flex-wrap: column wrap;
+  justify-content: center;
+}
 .nav-cluster {
   display: flex;
   justify-content: space-between;
@@ -76,8 +81,9 @@ footer {
 .container-group {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  align-content: center;
   border: 1px solid #333;
 }
 img.responsive-image {
@@ -90,10 +96,10 @@ body {
   height: 100%;
 }
 .wrapper {
-  width: 80%;
+  width: 90%;
   max-width: 600px;
   height: auto;
-  margin: 0 auto;
+  margin: 30vh auto;
   background: var(--media-background-color);
 }
 .h-iframe {
