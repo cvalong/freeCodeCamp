@@ -1,0 +1,78 @@
+:root {
+  --nav-color-alpha: rgba(0, 0, 0, 0.5);
+  --text-color: #555;
+  --text-color-emphasis: #333;
+  --primary-color: #e81c4f;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: helvetica, sans-serif;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+h1,
+h2,
+strong {
+  color: var(--text-color-emphasis);
+}
+a {
+  color: var(--primary-color);
+}
+
+navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 20px;
+  width: 100%;
+  height: 80px;
+  background: var(--nav-color-alpha);
+  z-index: 2;
+}
+.large-container {
+  max-width: 100%;
+  height: 100vh;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #333;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.small-container {
+  max-width: 800px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-group {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+img.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
